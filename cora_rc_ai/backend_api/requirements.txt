@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+httpx
+pydantic
+pydantic-settings
+asyncpg
+pgvector
+sentence-transformers
+pdfplumber
+python-docx
+numpy
+python-multipart
