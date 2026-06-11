@@ -957,6 +957,8 @@ Scores the live retriever + compliance agent against the persona-balanced mini e
 4. PostgreSQL + pgvector as a unified storage strategy for transactional and semantic retrieval needs.
 5. Container-first deployment design with Kubernetes manifests for service orchestration.
 
+### The 3 Major ADR's
+  - `docs/CORA-Architecture Decision Records.pdf`
 ---
 
 ## 21. Delivery Roadmap and Known Gaps
