@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cora-api
+  labels:
+    app: cora-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cora-api
+  template:
+    metadata:
+      labels:
+        app: cora-api
+    spec:
+      containers:
+      - name: cora-api
+        image: cora-api:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: cora-secrets
+              key: database-url
+        - name: AGENTIC_BACKEND_URL
+          value: "http://cora-agentic-service:8080"
+        - name: API_HOST
+          value: "0.0.0.0"
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cora-api-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: cora-api
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000

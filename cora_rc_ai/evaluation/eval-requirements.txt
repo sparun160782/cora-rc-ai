@@ -1,0 +1,8 @@
+ragas==0.2.14
+datasets<3
+langchain<1
+langchain-core<1
+# ragas 0.2.14 imports langchain_community.chat_models.vertexai at import time.
+# That module is removed in langchain-community 0.4.x.
+langchain-community<0.4
+langchain-openai<1
