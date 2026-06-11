@@ -20,14 +20,7 @@ In simple terms: it is "AI search + reasoning + compliance workflow" in one plat
 
 A short walkthrough of the CORA user interface.
 
-<video src="https://github.com/<org-or-user>/<repo>/raw/<branch>/cora_rc_ai/docs/ui-navigation/CORA-AI.mp4" controls width="100%"></video>
-
-> If the player above does not appear, use the direct link: [docs/ui-navigation/CORA-AI.mp4](docs/ui-navigation/CORA-AI.mp4)
-
-How to enable inline playback on GitHub:
-1. Commit and push the video file (`cora_rc_ai/docs/ui-navigation/CORA-AI.mp4`) to your repository.
-2. Replace `<org-or-user>`, `<repo>`, and `<branch>` in the `src` URL above with your repository's values (for example, `https://github.com/cora-rc-ai/raw/main/cora_rc_ai/docs/ui-navigation/CORA-AI.mp4`). The `/raw/` URL streams the file so GitHub renders an inline HTML5 player.
-3. Alternatively, drag-and-drop the `.mp4` into the README via GitHub's web editor - GitHub uploads it and inserts a hosted `user-attachments` URL that plays automatically. (Note: this hosted copy is separate from the committed file.)
+[![CORA UI Demo](https://img.youtube.com/vi/WCiHx9okBFE/0.jpg)](https://youtu.be/WCiHx9okBFE)
 
 ## Architecture Document
 
