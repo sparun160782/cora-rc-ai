@@ -1,0 +1,42 @@
+{
+  "question": [
+    "Generate this week's compliance report summarizing transactions screened, risk-level breakdown, flagged issues with regulation citations, and unresolved compliance gaps.",
+    "Produce a monthly AML/KYC compliance report covering customer due diligence breaches, with supporting RBI Master Direction clauses cited from the Knowledge Base.",
+    "Prepare a flagged-transactions report for high-risk and critical cross-border payments this period, citing the applicable regulatory clauses and recommended remediation.",
+    "Draft a compliance gaps report listing unresolved KYC and sanctions-screening deficiencies, each mapped to the governing regulation and a remediation recommendation.",
+    "Create an executive compliance summary for senior management on this period's screening outcomes, top risk themes, and outstanding regulatory exposures.",
+    "Generate an evidence-backed audit report on high-risk decisions, including the cited regulation version, clause references, and citation verification status."
+  ],
+  "answer": [
+    "A structured Markdown report with Executive Summary, Transactions Screened (by risk level), Flagged Issues with KB citations, Unresolved Compliance Gaps with remediation, and an Evidence Appendix of retrieved clauses.",
+    "A monthly report detailing CDD breaches, each backed by a cited RBI KYC clause retrieved from the KB, with remediation actions and an evidence appendix.",
+    "A flagged-transactions report grouping HIGH/CRITICAL cross-border payments, citing applicable clauses and listing remediation steps with KB-verified citations.",
+    "A compliance gaps report enumerating unresolved KYC/sanctions deficiencies, each mapped to a governing regulation and an actionable remediation recommendation.",
+    "An executive summary highlighting screening totals, top risk themes, and outstanding regulatory exposures in concise Markdown for senior management.",
+    "An audit report listing high-risk decisions with cited regulation version, clause references, and citation verification status for each."
+  ],
+  "contexts": [
+    [""],
+    [""],
+    [""],
+    [""],
+    [""],
+    [""]
+  ],
+  "ground_truth": [
+    "Must follow the report structure (Executive Summary, Transactions Screened, Flagged Issues, Unresolved Gaps, Evidence Appendix) and include KB-cited regulation references.",
+    "Must report CDD breaches with KB-retrieved RBI KYC clause citations and remediation actions; must not fabricate clause numbers.",
+    "Must list HIGH/CRITICAL cross-border transactions with applicable regulatory clauses and concrete remediation recommendations.",
+    "Must enumerate unresolved KYC/sanctions gaps, map each to a governing regulation, and provide a remediation recommendation.",
+    "Must provide a concise executive summary with screening totals, top risk themes, and outstanding regulatory exposures.",
+    "Must provide regulation version, clause references, and citation verification status for each high-risk decision."
+  ],
+  "persona": [
+    "Compliance Head",
+    "Compliance Officer",
+    "Compliance Officer",
+    "Compliance Head",
+    "Compliance Head",
+    "Internal Auditor"
+  ]
+}
