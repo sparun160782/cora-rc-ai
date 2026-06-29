@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cora-agentic
+  labels:
+    app: cora-agentic
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cora-agentic
+  template:
+    metadata:
+      labels:
+        app: cora-agentic
+    spec:
+      containers:
+      - name: cora-agentic
+        image: cora-agentic:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: cora-secrets
+              key: database-url
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "2Gi"
+          limits:
+            cpu: "2000m"
+            memory: "4Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cora-agentic-service
+spec:
+  selector:
+    app: cora-agentic
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
