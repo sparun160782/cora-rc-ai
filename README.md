@@ -6,7 +6,7 @@
 |---|---|
 | **System** | CORA (Compliance Oriented Regulatory Assistant) |
 | **Version** | 1.0 (Consolidated) |
-| **Date** | 2026-06-10 |
+| **Date** | 2026-06-29 |
 | **Author / Solution Architect** | Arun S. P. |
 | **Document ID (SARB)** | CORA-SARB-001 |
 | **Prepared For** | Architecture Review Board, Security, Platform/SRE, Compliance/Legal, Product |
